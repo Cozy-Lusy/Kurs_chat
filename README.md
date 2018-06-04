@@ -4,8 +4,8 @@
 
 <h3>Начало работы</h3>
 
-$ cd chat-curs
-$ npm install
-$ node index.js
+<li>$ cd chat-curs</li>
+<li>$ npm install</li>
+<li>$ node index.js</li>
 
 Введите в браузере http://localhost:3000.
