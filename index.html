@@ -59,7 +59,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
 
     <script>
-      const socket = io()
+      const socket = io() //Загрузка socket.io-client, который предоставляет глобальный io, а затем подключается по умолчанию к хосту обслуживающему страницу
       const messageInput = document.getElementById('message')
       const messagesBlock = document.getElementById('messages')
       const chekBlock = document.getElementById('chek')
