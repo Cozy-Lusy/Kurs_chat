@@ -1,11 +1,11 @@
 var app = require('express')();
-var http = require('http').Server(app);
+var http = require('http').Server(app); //Express инициализирует app как обработчик функции, который можно предоставить на HTTP-сервер
 var io = require('socket.io')(http);
 
 const clients = {};
 
-app.get('/', function(req, res){
-  res.sendFile(__dirname + '/index.html');
+app.get('/', function(req, res){ //Мы определяем обработчик маршрута /, который вызывается, когда мы попадаем на наш сайт.
+  res.sendFile(__dirname + '/index.html'); //Подключаем файл index.html
 });
 
 io.on('connection', function(socket){
